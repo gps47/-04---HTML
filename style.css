@@ -1,0 +1,164 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* camada do fundo */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* ========================= */
+/* TOPO UNIFICADO (HEADER) */
+/* ========================= */
+header {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    color: white;
+    padding: 20px 0 10px;
+}
+
+/* título dentro do header */
+header h1 {
+    
+    margin-bottom: 10px;
+}
+
+/* MENU */
+nav {
+    background-color: rgba(0, 0, 0, 0.75); /* transparência */
+    backdrop-filter: blur(6px); /* efeito vidro (moderno) */
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px 0; /* mantém igual ao header */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* hover suave */
+nav a:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+/* página ativa */
+.ativo {
+    border-bottom: 2px solid gold;
+}
+
+/* ========================= */
+/* CONTEÚDO */
+/* ========================= */
+main {
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* IMAGENS */
+.capa {
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.capa:hover {
+    transform: scale(1.15);
+}
+
+/* VÍDEO */
+.video {
+    margin: 20px;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+.index {
+    text-align: center;
+}
+
+.index a {
+    display: inline-block;
+    margin: 15px 25px;
+}
+
+.index h1 {
+    color: white;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.75); /* transparência */
+    backdrop-filter: blur(6px); /* efeito vidro (moderno) */
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px 0; /* mantém igual ao header */
+}
+
+.index h5 {
+    color: white;
+    margin-top: -5px;      /* remove espaço acima */
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.75); /* transparência */
+    backdrop-filter: blur(6px); /* efeito vidro (moderno) */
+    -webkit-backdrop-filter: blur(6px);
+    padding: 20px 0; /* mantém igual ao header */
+}
+
+p{
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 20px; 
+}
+img{
+    margin-bottom: 20px; 
+}
+h3{
+    margin-bottom: 20px; 
+}
+
+h4{
+    margin-bottom: 20px;
+}
